@@ -16,7 +16,7 @@
 
 ### Overview
 
-Building the UX turned out to be quite a challenge which took up the great majority of my time among figuring out cache issues.
+Building the UX turned out to be quite a challenge which took up the great majority of my time among figuring out cache issues. This is a iOS or iPhone focused application.
 
 ### Framework & Interface Builder Choice
 
