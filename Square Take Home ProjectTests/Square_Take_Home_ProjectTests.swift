@@ -1,6 +1,6 @@
 //
-//  Square_Take_Home_ProjectTests.swift
-//  Square Take Home ProjectTests
+//  Square_Take_Home_ProjectUITests.swift
+//  Square Take Home ProjectUITests
 //
 //  Created by TizzyMatic on 12/12/22.
 //
@@ -8,29 +8,33 @@
 import XCTest
 @testable import Square_Take_Home_Project
 
-final class Square_Take_Home_ProjectTests: XCTestCase {
+final class Square_Take_Home_ProjectUITests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testEmployeesCodable() throws {
+        let expected = [Employee(uuid: "2192206e-05c6-4118-a82f-e51762f06a5e", fullName: "Tony Montana", phoneNumber: "444-444-4444", emailAddress: "tonymontana@gmail.com", biography: "Vestibulum varius justo et dui suscipit tempus. Etiam a arcu eget augue semper facilisis eget non mauris. Integer malesuada lectus et massa efficitur, ut lacinia quam condimentum.", smallPhotoUrl: "https://avatars.githubusercontent.com/u/19754084?v=4", largePhotoUrl: "https://avatars.githubusercontent.com/u/19754084?v=4", teamName: "Cavs", employeeType: "FULL_TIME")]
+        
+        let encoder = JSONEncoder()
+        encoder.keyEncodingStrategy = .convertToSnakeCase
+        let encoded = try encoder.encode(expected)
+        
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        let decoded = try decoder.decode([Employee].self, from: encoded)
+        
+        XCTAssertEqual(decoded, expected)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testEmployeeCodable() throws {
+        let expected = Employee(uuid: "2192206e-05c6-4118-a82f-e51762f06a5e", fullName: "Tony Montana", phoneNumber: "444-444-4444", emailAddress: "tonymontana@gmail.com", biography: "Vestibulum varius justo et dui suscipit tempus. Etiam a arcu eget augue semper facilisis eget non mauris. Integer malesuada lectus et massa efficitur, ut lacinia quam condimentum.", smallPhotoUrl: "https://avatars.githubusercontent.com/u/19754084?v=4", largePhotoUrl: "https://avatars.githubusercontent.com/u/19754084?v=4", teamName: "Lakers", employeeType: "Contractor")
+        
+        let encoder = JSONEncoder()
+        encoder.keyEncodingStrategy = .convertToSnakeCase
+        let encoded = try encoder.encode(expected)
+        
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        let decoded = try decoder.decode(Employee.self, from: encoded)
+        
+        XCTAssertEqual(decoded, expected)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

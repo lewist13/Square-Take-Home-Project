@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		B3683AC32947EAC10012B08C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3683AC22947EAC10012B08C /* AppDelegate.swift */; };
 		B3683AC52947EAC10012B08C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3683AC42947EAC10012B08C /* SceneDelegate.swift */; };
-		B3683AC72947EAC10012B08C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3683AC62947EAC10012B08C /* ViewController.swift */; };
 		B3683ACA2947EAC10012B08C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3683AC82947EAC10012B08C /* Main.storyboard */; };
 		B3683ACC2947EAC20012B08C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3683ACB2947EAC20012B08C /* Assets.xcassets */; };
 		B3683ACF2947EAC20012B08C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3683ACD2947EAC20012B08C /* LaunchScreen.storyboard */; };
 		B3683ADA2947EAC20012B08C /* Square_Take_Home_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3683AD92947EAC20012B08C /* Square_Take_Home_ProjectTests.swift */; };
-		B3683AE42947EAC20012B08C /* Square_Take_Home_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3683AE32947EAC20012B08C /* Square_Take_Home_ProjectUITests.swift */; };
-		B3683AE62947EAC20012B08C /* Square_Take_Home_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3683AE52947EAC20012B08C /* Square_Take_Home_ProjectUITestsLaunchTests.swift */; };
+		B3683B022947EC970012B08C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3683B012947EB9D0012B08C /* NetworkManager.swift */; };
+		B3683B032947EC9A0012B08C /* EmployeeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3683AFD2947EB960012B08C /* EmployeeCellView.swift */; };
+		B3683B052947ECA00012B08C /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3683AFF2947EB9A0012B08C /* ErrorMessage.swift */; };
+		B3683B062947ECA40012B08C /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3683AFB2947EB920012B08C /* EmployeeModel.swift */; };
+		B3683B072947ECA90012B08C /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3683AF72947EB8B0012B08C /* ImageExtension.swift */; };
+		B3683B082947ECAD0012B08C /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3683AF52947EB830012B08C /* EmployeeListViewController.swift */; };
+		B36D436B29480D2E00A9E688 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B36D436A29480D2E00A9E688 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,6 @@
 		B3683ABF2947EAC10012B08C /* Square Take Home Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Square Take Home Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3683AC22947EAC10012B08C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3683AC42947EAC10012B08C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B3683AC62947EAC10012B08C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3683AC92947EAC10012B08C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3683ACB2947EAC20012B08C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3683ACE2947EAC20012B08C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,8 +50,13 @@
 		B3683AD52947EAC20012B08C /* Square Take Home ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Square Take Home ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3683AD92947EAC20012B08C /* Square_Take_Home_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square_Take_Home_ProjectTests.swift; sourceTree = "<group>"; };
 		B3683ADF2947EAC20012B08C /* Square Take Home ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Square Take Home ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3683AE32947EAC20012B08C /* Square_Take_Home_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square_Take_Home_ProjectUITests.swift; sourceTree = "<group>"; };
-		B3683AE52947EAC20012B08C /* Square_Take_Home_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square_Take_Home_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B3683AF52947EB830012B08C /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
+		B3683AF72947EB8B0012B08C /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		B3683AFB2947EB920012B08C /* EmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
+		B3683AFD2947EB960012B08C /* EmployeeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCellView.swift; sourceTree = "<group>"; };
+		B3683AFF2947EB9A0012B08C /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		B3683B012947EB9D0012B08C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B36D436A29480D2E00A9E688 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +87,9 @@
 		B3683AB62947EAC10012B08C = {
 			isa = PBXGroup;
 			children = (
+				B36D436A29480D2E00A9E688 /* README.md */,
 				B3683AC12947EAC10012B08C /* Square Take Home Project */,
 				B3683AD82947EAC20012B08C /* Square Take Home ProjectTests */,
-				B3683AE22947EAC20012B08C /* Square Take Home ProjectUITests */,
 				B3683AC02947EAC10012B08C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,9 +107,14 @@
 		B3683AC12947EAC10012B08C /* Square Take Home Project */ = {
 			isa = PBXGroup;
 			children = (
+				B3683B002947EB9D0012B08C /* Managers */,
+				B3683AFE2947EB9A0012B08C /* Utilities */,
+				B3683AFC2947EB960012B08C /* Views */,
+				B3683AFA2947EB920012B08C /* Models */,
+				B3683AF62947EB8B0012B08C /* Extensions */,
+				B3683AF42947EB830012B08C /* Controllers */,
 				B3683AC22947EAC10012B08C /* AppDelegate.swift */,
 				B3683AC42947EAC10012B08C /* SceneDelegate.swift */,
-				B3683AC62947EAC10012B08C /* ViewController.swift */,
 				B3683AC82947EAC10012B08C /* Main.storyboard */,
 				B3683ACB2947EAC20012B08C /* Assets.xcassets */,
 				B3683ACD2947EAC20012B08C /* LaunchScreen.storyboard */,
@@ -118,13 +131,52 @@
 			path = "Square Take Home ProjectTests";
 			sourceTree = "<group>";
 		};
-		B3683AE22947EAC20012B08C /* Square Take Home ProjectUITests */ = {
+		B3683AF42947EB830012B08C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B3683AE32947EAC20012B08C /* Square_Take_Home_ProjectUITests.swift */,
-				B3683AE52947EAC20012B08C /* Square_Take_Home_ProjectUITestsLaunchTests.swift */,
+				B3683AF52947EB830012B08C /* EmployeeListViewController.swift */,
 			);
-			path = "Square Take Home ProjectUITests";
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B3683AF62947EB8B0012B08C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B3683AF72947EB8B0012B08C /* ImageExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B3683AFA2947EB920012B08C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3683AFB2947EB920012B08C /* EmployeeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3683AFC2947EB960012B08C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3683AFD2947EB960012B08C /* EmployeeCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B3683AFE2947EB9A0012B08C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B3683AFF2947EB9A0012B08C /* ErrorMessage.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B3683B002947EB9D0012B08C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B3683B012947EB9D0012B08C /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +285,7 @@
 			files = (
 				B3683ACF2947EAC20012B08C /* LaunchScreen.storyboard in Resources */,
 				B3683ACC2947EAC20012B08C /* Assets.xcassets in Resources */,
+				B36D436B29480D2E00A9E688 /* README.md in Resources */,
 				B3683ACA2947EAC10012B08C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3683AC72947EAC10012B08C /* ViewController.swift in Sources */,
+				B3683B082947ECAD0012B08C /* EmployeeListViewController.swift in Sources */,
+				B3683B072947ECA90012B08C /* ImageExtension.swift in Sources */,
+				B3683B062947ECA40012B08C /* EmployeeModel.swift in Sources */,
+				B3683B052947ECA00012B08C /* ErrorMessage.swift in Sources */,
+				B3683B032947EC9A0012B08C /* EmployeeCellView.swift in Sources */,
+				B3683B022947EC970012B08C /* NetworkManager.swift in Sources */,
 				B3683AC32947EAC10012B08C /* AppDelegate.swift in Sources */,
 				B3683AC52947EAC10012B08C /* SceneDelegate.swift in Sources */,
 			);
@@ -276,8 +334,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3683AE42947EAC20012B08C /* Square_Take_Home_ProjectUITests.swift in Sources */,
-				B3683AE62947EAC20012B08C /* Square_Take_Home_ProjectUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
